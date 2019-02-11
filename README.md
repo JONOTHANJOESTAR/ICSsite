@@ -1,2 +1,2 @@
 # ICSsite
-my class website
+my class website for computer science
