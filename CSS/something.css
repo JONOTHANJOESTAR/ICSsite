@@ -1,20 +1,41 @@
 body {
-	background-color: powderblue;
+	background-color: #0B0C10;
 }
 h1 { 
 	font-size: 60px;
 	font-family: georgia;
-	color: red;
+	color: #66FCF1;
 	text-align: center;
-
  }
 
-a {  
-
-
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	border: 2px solid #00D3C5;
+	background-color: #45A29E;
 }
 
-p {  
+h2{
+	color: #FCECB0;
+	text-align: center;
+}
 
+
+p {
+	color: #C5C6C7;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #FCECB0;
+	text-align: center;
+	padding: 15px 16px;
+	text-decoration: none;
 
 }
