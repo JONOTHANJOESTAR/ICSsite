@@ -37,5 +37,8 @@ li a {
 	text-align: center;
 	padding: 15px 16px;
 	text-decoration: none;
+}
 
+.center {
+	text-align: center;
 }
