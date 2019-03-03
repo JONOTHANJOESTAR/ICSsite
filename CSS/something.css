@@ -46,8 +46,11 @@ li a {
 }
 
 
-footer {
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	color: #9DB2FF;
-	display: block;
 	text-align: center;
 }
