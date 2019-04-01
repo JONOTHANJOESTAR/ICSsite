@@ -54,3 +54,8 @@ li a {
 	color: #9DB2FF;
 	text-align: center;
 }
+
+.DivSize{
+	height:100%; 
+	width:50%;
+	}
