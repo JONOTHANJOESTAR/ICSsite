@@ -20,4 +20,3 @@ function WhatIsBigger(){
    	alert("ERROR")
    }
 }
-
