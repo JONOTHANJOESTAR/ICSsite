@@ -21,3 +21,22 @@ function WhatIsBigger(){
    }
 }
 
+
+function Loops(){
+	var guess = prompt("Im thinking of a number");
+	var numberValue = 47;
+	while (true){
+	 if (guess == numberValue){
+	 	alert("Eyyyyy you got it!!");
+	 	break;
+	 }
+	 else if (guess>numberValue){
+	 	alert("Lower!");
+	 	var guess = prompt("Im thinking of a number");
+	 }
+	 else if (guess<numberValue){
+	 	alert("Higher!");
+	 	var guess = prompt("Im thinking of a number");
+	 }
+	}
+}
