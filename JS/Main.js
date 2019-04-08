@@ -20,6 +20,7 @@ function WhatIsBigger(){
    	alert("ERROR")
    }
 }
+<<<<<<< HEAD
 
 
 function Loops(){
@@ -40,3 +41,5 @@ function Loops(){
 	 }
 	}
 }
+=======
+>>>>>>> 39e0727a08f3e6206a6d1dd62fbcbc10f8e8ca52
