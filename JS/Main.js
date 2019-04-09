@@ -28,7 +28,7 @@ function Loops(){
 	var numberValue = 47;
 	while (true){
 	 if (guess == numberValue){
-	 	alert("Eyyyyy you got it!!");
+	 	alert("Eyyyy you got it!!");
 	 	break;
 	 }
 	 else if (guess>numberValue){
