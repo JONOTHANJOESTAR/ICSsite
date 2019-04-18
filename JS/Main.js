@@ -23,7 +23,7 @@ function WhatIsBigger(){
 
 
 
-function Loops(){
+function GuessTheNumber(){
 	var guess = prompt("Im thinking of a number from 0 to 100!(Press q to quit)");
 	var numberValue = Math.floor(Math.random() * 101);
 	var Quit = "q";
@@ -51,3 +51,5 @@ function Loops(){
 
 	}
 }
+
+
