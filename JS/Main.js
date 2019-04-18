@@ -53,3 +53,14 @@ function GuessTheNumber(){
 }
 
 
+function SidsTing(){
+	var list = [];
+	var limit= parseInt(prompt("how many items in the list"));
+	while(true){
+		var question =prompt("input items")
+		list.push(question);
+		items == list.length;
+
+
+	}
+}
