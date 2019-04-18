@@ -24,20 +24,30 @@ function WhatIsBigger(){
 
 
 function Loops(){
-	var guess = prompt("Im thinking of a number");
-	var numberValue = 47;
+	var guess = prompt("Im thinking of a number from 0 to 100!(Press q to quit)");
+	var numberValue = Math.floor(Math.random() * 101);
+	var Quit = "q";
 	while (true){
-	 if (guess == numberValue){
-	 	alert("Eyyyy you got it!!");
-	 	break;
-	 }
-	 else if (guess>numberValue){
-	 	alert("Lower!");
-	 	var guess = prompt("Im thinking of a number");
-	 }
-	 else if (guess<numberValue){
-	 	alert("Higher!");
-	 	var guess = prompt("Im thinking of a number");
-	 }
+		if (guess == numberValue){
+	 		alert("Eyyyy you got it!!");
+	 		break;
+	 	}
+	 	else if (guess>numberValue){
+	 		alert("Lower!");
+			var guess = prompt("Im thinking of a number from 0 to 100!(Press q to quit)");
+	 	}
+	 	else if (guess<numberValue){
+	 		alert("Higher!");
+	 		var guess = prompt("Im thinking of a number from 0 to 100!(Press q to quit)");
+	 	}
+	 	else if (guess == Quit ) {
+	 		break
+	 	}
+
+	 	else{
+	 		alert("Bad input")
+	 		var guess = prompt("Im thinking of a number from 0 to 100!(Press q to quit)");
+	 	}
+
 	}
 }
