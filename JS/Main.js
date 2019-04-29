@@ -54,11 +54,11 @@ function GuessTheNumber(){
 
 
 function SidsTing(){
-	var list = [];
-	  var limit = parseInt(prompt("how many items in the list"));
-		for(i=0;i<limit;i++){
+		var list = [];
+		var limit = parseInt(prompt("how many items in the list"));
+			for(i=0;i<limit;i++){
 			var question =prompt("input items")
 			list.push(question);
-	    console.log(list);
+		}
+		document.getElementById("jeff").innerHTML = "Grocery List: " +  list;
 	}
-}
