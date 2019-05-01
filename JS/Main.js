@@ -62,3 +62,12 @@ function SidsTing(){
 		}
 		document.getElementById("jeff").innerHTML = "Grocery List: " +  list;
 	}
+
+
+function StringLength(){
+	var argument = prompt("What String length do you want to know ?");
+	var length = argument.length;
+	document.getElementById("str").innerHTML = "The length of the string is: " + length;
+
+}
+
