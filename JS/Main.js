@@ -71,3 +71,15 @@ function StringLength(){
 
 }
 
+function SpongeBobMeme(){
+  var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)")
+  for (var i = 0; i < msg.length; i++) {
+    if (i % 2==0) {
+      msg.charAt(i).toUpperCase();
+    }
+    else{
+      msg.charAt(i);
+    }
+  }
+console.log(msg);
+}
