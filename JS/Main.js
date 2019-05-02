@@ -75,11 +75,11 @@ function SpongeBobMeme(){
   var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)")
   for (var i = 0; i < msg.length; i++) {
     if (i % 2==0) {
-      msg.charAt(i).toUpperCase();
+     msg[i].toLocaleLowerCase();
     }
     else{
-      msg.charAt(i);
-    }
+      msg[i].toLocaleUpperCase();
+        }
+  document.getElementById("meme").innerHTML = msg;
   }
-console.log(msg);
 }
