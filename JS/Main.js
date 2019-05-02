@@ -73,9 +73,12 @@ function StringLength(){
 
 function SpongeBobMeme(){
   var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)")
+  var manipulated = 0;
   for (var i = 0; i < msg.length; i++) {
     if (i % 2==0) {
-     msg[i].toLocaleLowerCase();
+     manipulated = manipulated + msg[i].toLocaleLowerCase();
+
+     ;
     }
     else{
       msg[i].toLocaleUpperCase();
