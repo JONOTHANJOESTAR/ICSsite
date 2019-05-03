@@ -85,3 +85,24 @@ function MSpongeBobMeme(){
         }
   }
 }
+
+function Encription(){
+	var unsername = "BRUH";
+	var pass = "word";
+	var inputUN = prompt("Enter unsername(lowercase).").toLocaleUpperCase();
+	if (inputUN = unsername){
+		document.getElementById("login").innerHTML = "Unsername:" + inputUN;
+		var inputP = prompt("Enter password.");
+		if (inputP = pass) {
+			document.getElementById("login2").innerHTML = "Password:" + inputP;
+			alert("Welcome User");		
+		}
+		else{
+			alert("Invalid Unsername");
+		}
+	}
+	else{
+		alert("Invalid Password");
+
+	}
+}
