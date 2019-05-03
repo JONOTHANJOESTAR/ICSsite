@@ -72,17 +72,16 @@ function StringLength(){
 }
 
 function SpongeBobMeme(){
-  var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)")
-  var manipulated = 0;
+  var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)");
+  var manipulated = "";
   for (var i = 0; i < msg.length; i++) {
     if (i % 2==0) {
      manipulated = manipulated + msg[i].toLocaleLowerCase();
-
-     ;
+     document.getElementById("meme").innerHTML = manipulated;
     }
     else{
-      msg[i].toLocaleUpperCase();
+     manipulated = manipulated + msg[i].toLocaleUpperCase();
+     document.getElementById("meme").innerHTML = manipulated;   
         }
-  document.getElementById("meme").innerHTML = msg;
   }
 }
