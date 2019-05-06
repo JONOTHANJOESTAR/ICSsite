@@ -5,6 +5,7 @@ function welcomeUser(){
 
 }
 
+
 function WhatIsBigger(){
   var number1 = parseInt(prompt("Pick a number"));
   var number2 = parseInt(prompt("Pick another number"));
@@ -20,7 +21,6 @@ function WhatIsBigger(){
    	alert("ERROR")
    }
 }
-
 
 
 function GuessTheNumber(){
@@ -71,6 +71,7 @@ function StringLength(){
 
 }
 
+
 function MSpongeBobMeme(){
   var msg = prompt("Input the sentance to change the caps (make sure to put lowercase)");
   var manipulated = "";
@@ -85,6 +86,7 @@ function MSpongeBobMeme(){
         }
   }
 }
+
 
 function Encription(){
 	var unsername = "BRUH";
