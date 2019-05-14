@@ -1,3 +1,5 @@
+
+
 function welcomeUser(){
 
 	var name = prompt("Enter your name:");
@@ -108,3 +110,20 @@ function Encription(){
 
 	}
 }
+
+
+function Pig(){
+	var message = prompt("What message do you want to encode?");
+	var list = message.split(" ");
+	for(var i = 0; i < list.length; i++){
+		if (i == is) {
+			console.log(i);
+		}
+		else{
+			
+		}
+
+	}
+
+}
+
