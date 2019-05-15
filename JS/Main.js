@@ -116,14 +116,32 @@ function Pig(){
 	var message = prompt("What message do you want to encode?");
 	var list = message.split(" ");
 	for(var i = 0; i < list.length; i++){
-		if (i == is) {
-			console.log(i);
+
+		if (list[i] == is) {
+			console.log(list[i]);
+		}
+		else if (list[i] == my) {
+			console.log(list[i]);
+		}
+		else if (list[i] == are) {
+			console.log(list[i]);
+		}
+		else if (list[i] == the) {
+			console.log(list[i]);
 		}
 		else{
+			var word = list[i]
+
+			//var wordarray = []
+			//wordarray.push(list[i])
+			//for (var b = 0; b < word; b++){
+
+				
+			}
 			
 		}
 
 	}
 
-}
+//}
 
