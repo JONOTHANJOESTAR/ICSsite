@@ -113,35 +113,22 @@ function Encription(){
 
 
 function Pig(){
+	var wordarray = [];
 	var message = prompt("What message do you want to encode?");
 	var list = message.split(" ");
 	for(var i = 0; i < list.length; i++){
 
-		if (list[i] == is) {
-			console.log(list[i]);
-		}
-		else if (list[i] == my) {
-			console.log(list[i]);
-		}
-		else if (list[i] == are) {
-			console.log(list[i]);
-		}
-		else if (list[i] == the) {
-			console.log(list[i]);
+		if (list[i].length <= 3) {
+			wordarray.push(list[i]);
 		}
 		else{
-			var word = list[i]
-
-			//var wordarray = []
-			//wordarray.push(list[i])
-			//for (var b = 0; b < word; b++){
-
+			var word = list[i];
+			var EndingWord = list[i].slice(0,1) + "ay";
+			var BeginingWord = list[i].slice(1);
+			wordarray.push(BeginingWord+EndingWord);
 				
-			}
-			
+			}	
 		}
-
+		console.log(wordarray);
 	}
-
-//}
 
