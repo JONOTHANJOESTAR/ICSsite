@@ -90,7 +90,7 @@ function MSpongeBobMeme(){
 }
 
 
-function Encription(){
+function Logln(){
 	var unsername = "BRUH";
 	var pass = "word";
 	var inputUN = prompt("Enter unsername(lowercase).").toLocaleUpperCase();
@@ -132,3 +132,5 @@ function Pig(){
 		console.log(wordarray);
 	}
 
+
+function Encripting()
