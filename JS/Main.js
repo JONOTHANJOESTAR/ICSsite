@@ -133,4 +133,22 @@ function Pig(){
 	}
 
 
-function Encripting()
+function Encripting(){
+var array = [];
+	var mesge = prompt("What message do you want to encode?");
+	var lit = mesge.split(" ");
+	for(var i = 0; i < lit.length; i++){
+
+		if (lit[i].length <= 3) {
+			array.push(lit[i]);
+		}
+		else{
+			var word = lit[i];
+			var EndingWord = list[i].slice(0,1) + "ay";
+			var BeginingWord = list[i].slice(1);
+			wordarray.push(BeginingWord+EndingWord);
+				
+			}	
+		}
+		console.log(wordarray);
+	}
