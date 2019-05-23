@@ -138,8 +138,6 @@ var array = [];
 var mesge = prompt("What message do you want to encode?");
 var lit = mesge.split(" ");
 	for(var i = 0; i < lit.length; i++){
-
-
+    
 		}
-		console.log(array);
 	}
