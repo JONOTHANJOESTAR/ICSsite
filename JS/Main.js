@@ -133,11 +133,29 @@ function Pig(){
 	}
 
 
-function Encripting(){
-var array = [];
+function Encrypting(){
 var mesge = prompt("What message do you want to encode?");
-var lit = mesge.split(" ");
-	for(var i = 0; i < lit.length; i++){
-    
+var empty = "";
+var lth = mesge.length;
+	for(var i = 0; i < lth; i++){
+		var c = mesge.charCodeAt(i);
+		var n = ((c*666)+1);
+		var x = String.fromCharCode(n);
+		empty += x;
 		}
+	console.log(empty);
 	}
+
+
+function Decryption(){
+var decode = prompt("What message do you want to decode?");
+var thing = "";
+var l = decode.length;
+	for (var i = 0; i < l; i++) {
+		 var y = String.fromCharCode(i)
+		 var o = ((c*666)+1);
+
+
+	}
+
+}
