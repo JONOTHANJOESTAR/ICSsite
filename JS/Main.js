@@ -139,7 +139,7 @@ var empty = "";
 var lth = mesge.length;
 	for(var i = 0; i < lth; i++){
 		var c = mesge.charCodeAt(i);
-		var n = ((c*666)+1);
+		var n = ((c*666)+2);
 		var x = String.fromCharCode(n);
 		empty += x;
 		}
@@ -152,10 +152,10 @@ var decode = prompt("What message do you want to decode?");
 var thing = "";
 var l = decode.length;
 	for (var i = 0; i < l; i++) {
-		 var y = String.fromCharCode(i)
-		 var o = ((c*666)+1);
-
-
-	}
-
+		 var y = decode.charCodeAt(i);
+		 var o = ((y-2)/666);
+     var d = String.fromCharCode(o);
+     thing += d;
+   }
+console.log(thing);
 }
