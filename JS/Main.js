@@ -139,11 +139,11 @@ var empty = "";
 var lth = mesge.length;
 	for(var i = 0; i < lth; i++){
 		var c = mesge.charCodeAt(i);
-		var n = ((c*666)+2);
+		var n = ((c*369)+12);
 		var x = String.fromCharCode(n);
 		empty += x;
 		}
-	console.log(empty);
+  document.getElementById("Result").innerHTML = "Encryption: " + empty;
 	}
 
 
@@ -153,9 +153,9 @@ var thing = "";
 var l = decode.length;
 	for (var i = 0; i < l; i++) {
 		 var y = decode.charCodeAt(i);
-		 var o = ((y-2)/666);
+		 var o = ((y-12)/369);
      var d = String.fromCharCode(o);
      thing += d;
    }
-console.log(thing);
+document.getElementById("Result2").innerHTML = "Decryption: " + thing;
 }
