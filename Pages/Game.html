@@ -20,7 +20,8 @@
 
 
 			<div>
-				<img id="OI" src="../Images/SID.png" class ="hidden">
+				<img id="OI" src="../Images/Sidsid.jpg" class ="hidden">
+				<img id="IO" src="../Images/Sidvengers.png" class="hidden">
 
 					<canvas id="myCanvas" width="480" height="320" style="background: #028A7C;"></canvas>
 					
@@ -47,6 +48,7 @@
 							var score = 0;
 							var lives = 3;
 							var img = document.getElementById("OI");
+							var mg = document.getElementById("IO");
 
 							var bricks = [];
 							for(var c=0; c<brickColumnCount; c++) {
@@ -136,18 +138,19 @@
 							  }
 							}
 							function drawScore() {
-							  ctx.font = "16px Arial";
-							  ctx.fillStyle = "#FCECB0";
+							  ctx.font = "20px Arial";
+							  ctx.fillStyle = "purple";
 							  ctx.fillText("Score: "+score, 8, 20);
 							}
 							function drawLives() {
-							  ctx.font = "16px Arial";
-							  ctx.fillStyle = "#FCECB0";
-							  ctx.fillText("Lives: "+lives, canvas.width-65, 20);
+							  ctx.font = "19px Arial";
+							  ctx.fillStyle = "purple";
+							  ctx.fillText("Lives: "+lives, canvas.width-68, 20);
 							}
 
 							function draw() {
 							  ctx.clearRect(0, 0, canvas.width, canvas.height);
+							  ctx.drawImage(mg, 0, 0, canvas.width, canvas.height);
 							  drawBricks();
 							  drawBall();
 							  drawPaddle();
