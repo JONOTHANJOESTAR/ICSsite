@@ -45,6 +45,14 @@ ol{
 	color: #FFFFFF;
 }
 
+button{
+	background-color: #45A29E;
+	color: #FCECB0;
+	border: none;
+	cursor: pointer;
+	text-decoration: underline;
+	padding: 15px 30px;
+}
 
 .center {
 	text-align: center;

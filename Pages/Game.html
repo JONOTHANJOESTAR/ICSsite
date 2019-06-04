@@ -18,12 +18,14 @@
 				<li><a href="Game.html">Game</a></li>				
 			</ul>
 
+				<h2>Breakout Game</h2>
 
 			<div>
 				<img id="OI" src="../Images/Picture2.png" class ="hidden">
 				<img id="IO" src="../Images/Sidvengers.png" class="hidden">
 
-					<canvas id="myCanvas" width="480" height="320" style="background: #028A7C;"></canvas>
+					<canvas id="myCanvas" width="960" height="640"></canvas>
+					480,320
 					
 						<script >
 							var canvas = document.getElementById("myCanvas");
@@ -38,13 +40,13 @@
 							var paddleX = (canvas.width-paddleWidth)/2;
 							var rightPressed = false;
 							var leftPressed = false;
-							var brickRowCount = 5;
-							var brickColumnCount = 3;
+							var brickRowCount = 7;
+							var brickColumnCount = 6;
 							var brickWidth = 75;
 							var brickHeight = 20;
-							var brickPadding = 10;
-							var brickOffsetTop = 30;
-							var brickOffsetLeft = 30;
+							var brickPadding = 20;
+							var brickOffsetTop = 40;
+							var brickOffsetLeft = 140;
 							var score = 0;
 							var lives = 3;
 							var img = document.getElementById("OI");
@@ -96,7 +98,7 @@
 							          b.status = 0;
 							          score++;
 							          if(score == brickRowCount*brickColumnCount) {
-							            alert("YOU WIN, CONGRATS!");
+							            alert("EYYYY YOU WIN, CONGRATS!");
 							            document.location.reload();
 							          }
 							        }
@@ -145,7 +147,7 @@
 							function drawLives() {
 							  ctx.font = "19px Arial";
 							  ctx.fillStyle = "purple";
-							  ctx.fillText("Lives: "+lives, canvas.width-68, 20);
+							  ctx.fillText("Lives: "+lives, canvas.width-80, 20);
 							}
 
 							function draw() {
