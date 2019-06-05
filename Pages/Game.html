@@ -20,23 +20,23 @@
 
 				<h2>Breakout Game</h2>
 
-			<div>
+			<div class="center">
 				<img id="OI" src="../Images/Picture2.png" class ="hidden">
 				<img id="IO" src="../Images/Sidvengers.png" class="hidden">
 
-					<canvas id="myCanvas" width="960" height="640"></canvas>
+					<canvas id="myCanvas" width="940" height="620"></canvas>
 					480,320
 					
 						<script >
 							var canvas = document.getElementById("myCanvas");
 							var ctx = canvas.getContext("2d");
-							var ballRadius = 10;
+							var ballRadius = 12;
 							var x = canvas.width/2;
 							var y = canvas.height-30;
-							var dx = 2;
-							var dy = -2;
-							var paddleHeight = 10;
-							var paddleWidth = 75;
+							var dx = 3.5;
+							var dy = -3.5;
+							var paddleHeight = 15;
+							var paddleWidth = 90;
 							var paddleX = (canvas.width-paddleWidth)/2;
 							var rightPressed = false;
 							var leftPressed = false;
@@ -45,7 +45,7 @@
 							var brickWidth = 75;
 							var brickHeight = 20;
 							var brickPadding = 20;
-							var brickOffsetTop = 40;
+							var brickOffsetTop = 30;
 							var brickOffsetLeft = 140;
 							var score = 0;
 							var lives = 3;
@@ -112,7 +112,7 @@
 							  ctx.arc(x, y, ballRadius, 0, Math.PI*2);
 							  ctx.fillStyle = "#FCECB0"; 
 							  ctx.fill();
-							  ctx.drawImage(img, x-28, y-44, ballRadius+46, ballRadius+45);
+							  ctx.drawImage(img, x-28, y-44, ballRadius+51, ballRadius+51);
 							  ctx.closePath();
 							}
 							function drawPaddle() {
@@ -200,5 +200,6 @@
 
 							draw();
 						</script>
+					</div>
 		</body>
 	</html>
