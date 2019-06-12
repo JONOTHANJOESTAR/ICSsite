@@ -45,6 +45,11 @@ ol{
 	color: #FFFFFF;
 }
 
+.cool{
+  height: 900px;
+  background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
 .button{
 	background-color: #45A29E;
 	color: #FCECB0;
