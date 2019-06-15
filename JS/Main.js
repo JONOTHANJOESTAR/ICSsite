@@ -94,19 +94,19 @@ function Logln(){
 	var unsername = "BRUH";
 	var pass = "word";
 	var inputUN = prompt("Enter unsername(lowercase).").toLocaleUpperCase();
-	if (inputUN = unsername){
-		document.getElementById("login").innerHTML = "Unsername:" + inputUN;
+	if (inputUN == unsername){
+		document.getElementById("login").innerHTML = "Unsername: " + inputUN;
 		var inputP = prompt("Enter password.");
-		if (inputP = pass) {
-			document.getElementById("login2").innerHTML = "Password:" + inputP;
+		if (inputP == pass) {
+			document.getElementById("login2").innerHTML = "Password: " + inputP;
 			alert("Welcome User");		
 		}
 		else{
-			alert("Invalid Unsername");
+			alert("Invalid Password");
 		}
 	}
 	else{
-		alert("Invalid Password");
+		alert("Invalid Unsername");
 
 	}
 }
