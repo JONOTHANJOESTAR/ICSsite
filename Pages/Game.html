@@ -30,11 +30,11 @@
 						<script >
 							var canvas = document.getElementById("myCanvas");
 							var ctx = canvas.getContext("2d");
-							var ballRadius = 23;
+							var ballRadius = 30;
 							var x = canvas.width/2;
 							var y = canvas.height-30;
-							var dx = 3.5;
-							var dy = -3.5;
+							var dx = 2.8;
+							var dy = -2.8;
 							var paddleHeight = 15;
 							var paddleWidth = 90;
 							var paddleX = (canvas.width-paddleWidth)/2;
@@ -110,9 +110,9 @@
 							function drawBall() {
 							  ctx.beginPath();
 							  ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-							  ctx.fillStyle = "#FCECB0"; 
+							  ctx.fillStyle = "transparent"; 
 							  ctx.fill();
-							  ctx.drawImage(img, x-33, y-44, ballRadius+51, ballRadius+51);
+							  ctx.drawImage(img, x-36, y-30, ((ballRadius*2)+8), ballRadius+30);
 							  ctx.closePath();
 							}
 							function drawPaddle() {
@@ -202,7 +202,8 @@
 						</script>
 					</div>
 					<div class="center">
-						<iframe width="200" height="5" src="https://www.youtube.com/embed/Aw4I6sJ7F18?autoplay=1"></iframe>
+						<P>Click to play the Avengers 8-bit theme</P>
+						<iframe width="90" height="25" src="https://www.youtube.com/embed/Aw4I6sJ7F18?autoplay=1"></iframe>
 					</div>
 		</body>
 	</html>
