@@ -1,6 +1,7 @@
 body {
 	background-color: #0B0C10;
 }
+
 h1 { 
 	font-size: 60px;
 	font-family: georgia;
@@ -22,7 +23,6 @@ h2{
 	text-align: center;
 	font-size: 30px;
 }
-
 
 p {
 	color: #C5C6C7;
@@ -88,15 +88,14 @@ ol{
   padding: 15px;
   border-radius: 4px;
 }
+
 #Top:hover {
   background-color: #1a3a39;
 }
 
-
 .center {
 	text-align: center;
 }
-
 
 .footer {
 	position: fixed;
@@ -109,18 +108,50 @@ ol{
 
 .DivSize{
 	height:100%; 
-	width:55%;
+	width:50%;
 	}
 
 .DivSize2{
 	height:100%; 
 	width:97%;
 }
+
 #jeff {
 	display: inline;
 }
+
 .hidden{
 	height: 0;
 	width: 0;
 
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 28.6%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 16px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 26%;
+  margin: 0 auto;
+}
+
+.ya{
+	padding-bottom: 9px;
+	padding-top: 19px;
 }

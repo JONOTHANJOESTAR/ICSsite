@@ -16,17 +16,45 @@
 				<li><a href="Feedback.html">Feedback</a></li>
 				<li><a href="Game.html">Game</a></li>
 			</ul>
+
+			<button onclick="Up()" id="Top">GO TO THE TOP</button>
 	
 			<h2>Feedback</h2>
-			
-		
-				<br><p><em>Classmate Name:</em> Siddarth</p><div class="DivSize"><p><em>Critique/Comments:</em>  Good colour scheme, the footer position needs to be consistent,and the spacing between the title and pictures isn't consistent</p></div>
-				
-				<br><p><em>Classmate Name:</em> Russell</p><div class="DivSize"><p><em>Critique/Comments:</em>  Your website is simple and easy to follow, with placeholders ready for new content over the semester. The only criticism I have is that as of March,4,2019 your "About Me" page does not have enough detail. On this page, name some work experience, tech skills, education, information that people looking at this website would definitely want to know about you. Maybe include hobbies or favourite subjects so users can talk to about something (Jojo).</p></div>
+			<div class="center ya">
 
-				<br><p><em>Classmate Name:</em> Osman</p><div class="DivSize"><p><em>Critique/Comments:</em> Your website looks nice but you should add more content to your site. Try adding pictures that could go with your site's colour theme and make it look more interesting.</p></div>
-				<br><p><em>Classmate Name:</em> Areeb</p><div class="DivSize"><p><em>Critique/Comments:</em> Your site's overall functionality is top notch. All the programs work and the game is a really nice touch. One big thing to improve upon would be the whole look of the site. It looks a bit bland right now so maybe some backgrounds and/or different fonts might help. Also there is some spacing issue with text for example, missing spaces between a letter and a comma.</p></div>
-		
+				<br><img src="../Images/Siddarth.jpg"><br><button class="collapsible"><p><em>Classmate Name:</em> Siddarth</p></button><div class="content"><p style="color: black"><em>Critique/Comments:</em>  Good colour scheme, the footer position needs to be consistent,and the spacing between the title and pictures isn't consistent</p></div><br>
+
+
+				<br><img src="../Images/rssl.jpg"><br><button class="collapsible"><p><em>Classmate Name:</em> Russell</p></button><div class="content"><p style="color: black"><em>Critique/Comments:</em>  Your website is simple and easy to follow, with placeholders ready for new content over the semester. The only criticism I have is that as of March, 4, 2019 your "About Me" page does not have enough detail. On this page, name some work experience, tech skills, education, information that people looking at this website would definitely want to know about you. Maybe include hobbies or favourite subjects so users can talk to about something (Jojo).</p></div><br>
+				
+
+				<br><img src="../Images/ya.jpg"><br><button class="collapsible"><p><em>Classmate Name:</em> Osman</p></button><div class="content"><p style="color: black"><em>Critique/Comments:</em>  Your website looks nice but you should add more content to your site. Try adding pictures that could go with your site's colour theme and make it look more interesting.</p></div><br><br>
+
+
+				<br><img src="../Images/reeb.jpg"><br><button class="collapsible"><p><em>Classmate Name:</em> Areeb</p></button><div class="content"><p style="color: black"><em>Critique/Comments:</em>  Your site's overall functionality is top notch. All the programs work and the game is a really nice touch. One big thing to improve upon would be the whole look of the site. It looks a bit bland right now so maybe some backgrounds and/or different fonts might help. Also there is some spacing issue with text for example, missing spaces between a letter and a comma.</p></div>
+
+
+			</div>
+
+			<script>
+				var c = document.getElementsByClassName("collapsible")
+
+				for (var i = 0; i<c.length ;i++) {
+					c[i].addEventListener("click", function() {
+					    this.classList.toggle("active");
+					    var content = this.nextElementSibling;
+					    if (content.style.display === "block") {
+					      content.style.display = "none";
+					    } else {
+					      content.style.display = "block";
+					    }
+					  });
+				}
+			</script>
+
+
+
+
 				<div class="footer">
 					<p1>Contact: Syed Rehman,642757@pdsb.net</p1>
 				</div>
