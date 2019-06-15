@@ -43,6 +43,23 @@
 			<br><div><button class="button" onclick="Decryption()">Decryption</button></div>
 			<br><p id="Result2"></p>
 
+			<script>
+				window.onscroll = function() {Top()};
+				function Top(){
+					if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				    document.getElementById("Top").style.display = "block";
+				  } else {
+				    document.getElementById("Top").style.display = "none";
+				  }
+				}
+
+
+				function Up() {
+				  document.body.scrollTop = 0;
+				  document.documentElement.scrollTop = 0;
+				}
+			</script>
+
 
 				<br><div class="footer">
 					<p1>Contact: Syed Rehman,642757@pdsb.net</p1>

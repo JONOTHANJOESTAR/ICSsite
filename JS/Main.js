@@ -161,20 +161,7 @@ document.getElementById("Result2").innerHTML = "Decryption: " + thing;
 }
 
 
-window.onscroll = function() {Top()};
-function Top(){
-	if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("Top").style.display = "block";
-  } else {
-    document.getElementById("Top").style.display = "none";
-  }
-}
 
-
-function Up() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 
 
