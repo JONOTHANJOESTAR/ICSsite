@@ -127,9 +127,9 @@ function Pig(){
 			var BeginingWord = list[i].slice(1);
 			wordarray.push(BeginingWord+EndingWord);
 			}		
-			var jeff = wordarray.toString();
+			var abc = wordarray.toString();
 		}
-		document.getElementById("ok").innerHTML = jeff;
+		document.getElementById("ok").innerHTML = abc;
 	}
 
 
