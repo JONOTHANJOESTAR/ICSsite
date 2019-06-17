@@ -126,10 +126,10 @@ function Pig(){
 			var EndingWord = list[i].slice(0,1) + "ay";
 			var BeginingWord = list[i].slice(1);
 			wordarray.push(BeginingWord+EndingWord);
-				
-			}	
+			}		
+			var jeff = wordarray.toString();
 		}
-		console.log(wordarray);
+		document.getElementById("ok").innerHTML = jeff;
 	}
 
 
